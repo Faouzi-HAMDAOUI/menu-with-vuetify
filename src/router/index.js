@@ -11,6 +11,21 @@ const routes = [
     component: Home
   },
   {
+    path: '/alerte',
+    name: 'Alerte',
+    component: () => import(/* webpackChunkName: "alerte" */ '../views/Alerte.vue')
+  },
+  {
+    path: '/default',
+    name: 'Default',
+    component: () => import(/* webpackChunkName: "default" */ '../views/Default.vue')
+  },
+  {
+    path: '/carte',
+    name: 'Carte',
+    component: () => import(/* webpackChunkName: "Carte" */ '../views/Carte.vue')
+  },
+  {
     path: '/about',
     name: 'About',
     // route level code-splitting
