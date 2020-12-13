@@ -67,6 +67,7 @@
      items: [
           { title: 'Home', to:'/', icon: 'mdi-home-flood' },
           { title: 'About', to:'/about', icon: 'mdi-information' },
+          { title: 'Contact', to:'/contact', icon: 'mdi-information' },
           { title: 'Alerte', to:'/alerte', icon: 'mdi-view-dashboard' },
           { title: 'Carte', to:'/carte', icon: 'mdi-map-marker-radius' },
           
