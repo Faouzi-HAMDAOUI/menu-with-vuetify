@@ -5,7 +5,7 @@
         <v-icon>mdi-chevron-right</v-icon>
       </template>
     </v-breadcrumbs>
-   <h1>Connectez-vous</h1>
+   <h1>Création d'un compte</h1>
   <v-card
     class="mx-auto"
     max-width="500"
@@ -13,7 +13,7 @@
   >
   <div class="text-center mx-16">
     <v-img 
-      src="https://aplustudents.com/images/user1.png"
+      src="https://simpleicon.com/wp-content/uploads/add-user-256x256.png"
       height="200px"
       width="200px"
       
@@ -43,13 +43,23 @@
       required
     ></v-text-field>
 
+    <v-text-field
+      v-model="password2"
+      type="password"
+      :counter="20"
+      :rules="passwor2dRules"
+      label="Confirmé le mot de passe"
+      prepend-icon="mdi-lock"
+      required
+    ></v-text-field>
+
     <v-btn block
       :disabled="!valid"
       color="success"
       class="mr-4"
       @click="validate"
     >
-      Connectez
+      Valider
     </v-btn>
    <br />
 
@@ -59,10 +69,7 @@
     >
       Annuler
     </v-btn>
-    <br />
-    <v-btn block Link to="/register">
-    Créer un compte
-  </v-btn>
+   
   
   </v-form>
   </v-card>
@@ -75,10 +82,15 @@
 <script>
   export default {
     data: () => ({
-     links: [{text: 'Home', to: '/'},{text: 'Connexion', to: '/connexion'}],
+     links: [{text: 'Home', to: '/'},{text: 'Connexion', to: '/connexion'},{text: 'Enregistrer', to: '/register'}],
       valid: true,
       password: '',
       passwordRules: [
+        v => !!v || 'password is required',
+        v => (v && v.length <= 20) || 'password must be less than 20characters',
+      ],
+      password2: '',
+      password2Rules: [
         v => !!v || 'password is required',
         v => (v && v.length <= 20) || 'password must be less than 20characters',
       ],
