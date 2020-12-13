@@ -3,6 +3,17 @@
      <v-app-bar app>
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
       <v-toolbar-title>Ma Bibliothèque Idéale</v-toolbar-title>
+      <v-spacer></v-spacer>
+
+      <v-btn icon>
+        <v-icon>mdi-magnify</v-icon>
+      </v-btn>
+      <v-btn icon 
+      Link
+      to="/connexion"
+      >
+        <v-icon>mdi-account-arrow-right</v-icon>
+      </v-btn>
       </v-app-bar>
 
    <v-navigation-drawer v-model="drawer"app >
