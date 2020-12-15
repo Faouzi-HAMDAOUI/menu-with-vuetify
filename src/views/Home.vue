@@ -117,7 +117,6 @@
   <!-- ------------------- My card ------------------------ -->
    <v-container>
       <v-row dense>
-        
         <v-col
           v-for="(card, index) in cards"
           :key="card.title"
@@ -137,7 +136,7 @@
     </v-card-title>
 
     <v-card-subtitle>
-     Proposer par:
+     <slot>Proposé par:</slot>
       {{ card.author }}
     </v-card-subtitle>
 
@@ -169,9 +168,6 @@
       </v-expansion-panel>
     </v-expansion-panels>
   
-
-
-
   </v-card>
      </v-col>
 

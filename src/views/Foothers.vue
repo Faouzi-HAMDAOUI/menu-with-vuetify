@@ -8,7 +8,7 @@
         flat
         tile
         width="100%"
-        class="red lighten-1 text-center"
+        class="orange lighten-1 text-center"
       >
         <v-card-text>
           <v-btn
@@ -39,10 +39,11 @@
   export default {
     data: () => ({
       icons: [
-        'mdi-home',
+        'mdi-facebook',
+        'mdi-twitter',
+        'mdi-youtube',
         'mdi-email',
-        'mdi-calendar',
-        'mdi-delete',
+        'mdi-linkedin',
       ],
       items: [
         'default',

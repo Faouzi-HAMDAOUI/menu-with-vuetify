@@ -48,7 +48,7 @@
       type="password"
       :counter="20"
       :rules="passwor2dRules"
-      label="Confirmé le mot de passe"
+      label="Confirmer le mot de passe"
       prepend-icon="mdi-lock"
       required
     ></v-text-field>

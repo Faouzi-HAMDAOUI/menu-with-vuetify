@@ -49,7 +49,7 @@
       class="mr-4"
       @click="validate"
     >
-      Connectez
+      Connecter
     </v-btn>
    <br />
 
